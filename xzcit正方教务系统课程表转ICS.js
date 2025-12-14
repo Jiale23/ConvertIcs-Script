@@ -554,7 +554,7 @@
             hash = ((hash << 5) - hash) + raw.charCodeAt(i);
             hash |= 0;
         }
-        return `gdust-${Math.abs(hash)}@jwpt`;
+        return `${Math.abs(hash)}@jwpt`;
     }
 
     function generateFileName(startDate) {
